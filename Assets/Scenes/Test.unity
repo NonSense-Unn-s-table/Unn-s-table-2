@@ -382,7 +382,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -496,6 +496,7 @@ GameObject:
   - component: {fileID: 304617525}
   - component: {fileID: 304617530}
   - component: {fileID: 304617529}
+  - component: {fileID: 304617531}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -634,6 +635,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &304617531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304617524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 572b69f6fbde3bf4c999a31b03e5b9b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tuio: {fileID: 653050640}
+  rend: {fileID: 0}
+  rb: {fileID: 0}
+  tableCamera: {fileID: 0}
 --- !u!1 &653050639
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,7 +680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95b6f538130118349a428d1212dacaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EmulateTuio: 0
+  EmulateTuio: 1
   PositionFactorX: 80
   PositionFactorY: 45
 --- !u!4 &653050641

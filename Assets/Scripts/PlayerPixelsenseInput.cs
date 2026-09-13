@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SpawnCube : MonoBehaviour
+public class PlayerPixelsenseInput : MonoBehaviour
 {
     [SerializeField]
     private TUIOSupport tuio;
@@ -24,7 +24,7 @@ public class SpawnCube : MonoBehaviour
         ScreenObject cube;
         if (TUIOSupport.emulateTuio)
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButton(1))
             {
                 Vector2 mousePosition = Input.mousePosition;
                 
@@ -45,8 +45,7 @@ public class SpawnCube : MonoBehaviour
         else
         {
             // Find any "cube" on PixelSense
-            cube = TUIOSupport.GetFirstScreenObject(0);
-            Debug.Log(new Vector2(Screen.width, Screen.height));
+            cube = TUIOSupport.GetFirstScreenObject(1);
             cube.screenPosition *= new Vector2(Screen.width, Screen.height);
         }
 
@@ -60,7 +59,7 @@ public class SpawnCube : MonoBehaviour
             Physics.Raycast(ray, out hitInfo, 100f, LayerMask.GetMask("Floor"));
             Vector3 cubePosition = hitInfo.point;
 
-            Debug.Log("Cube position: " + cubePosition);
+            Debug.Log("Player position: " + cubePosition);
             rb.MovePosition(cubePosition + new Vector3(0f,1f,0f));
         } 
         else
