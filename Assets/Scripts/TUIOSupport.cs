@@ -83,6 +83,8 @@ public class TUIOSupport : MonoBehaviour
             };
 
             _screenObjects.Add(e.Object.Id, obj);
+
+            Debug.Log("Added object with ByteTag " + e.Object.ClassId + " at position " + obj.screenPosition);
         };
 
         objectProcessor.ObjectUpdated += (sender, e) =>
@@ -96,6 +98,8 @@ public class TUIOSupport : MonoBehaviour
             var go = _screenObjects[e.Object.Id];
             go.screenPosition = new Vector2(e.Object.X, 1 - e.Object.Y);
             go.angle = e.Object.Angle;
+
+            Debug.Log("Updated object with ByteTag " + e.Object.ClassId + " at pos: " + go.screenPosition);
         };
         ;
         objectProcessor.ObjectRemoved += (sender, e) =>
@@ -107,9 +111,10 @@ public class TUIOSupport : MonoBehaviour
             }
 
             _screenObjects.Remove(e.Object.Id);
+            
+            Debug.Log("Removed object with ByteTag " + e.Object.ClassId);
         };
         tuioServer.AddDataProcessor(objectProcessor);
-        Debug.Log("LOL");
     }
 
     public static IEnumerable<ScreenObject> GetScreenObjects()
@@ -121,5 +126,17 @@ public class TUIOSupport : MonoBehaviour
     public static IEnumerable<ScreenObject> GetScreenObjects(int classId)
     {
         return _instance._screenObjects.Values.Where(obj => obj.classId == classId);
+    }
+
+    public static ScreenObject GetFirstScreenObject(int classId)
+    {
+        try
+        {
+            return _instance._screenObjects.Values.First(obj => obj.classId == classId);
+        } 
+        catch (Exception e)
+        {
+            return null;
+        }
     }
 }

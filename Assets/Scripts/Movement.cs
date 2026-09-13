@@ -27,4 +27,9 @@ public class Movement : MonoBehaviour
         velocity = Vector2.ClampMagnitude(velocity, maxSpeed);
         transform.position += new Vector3(velocity.x, 0f, velocity.y) * Time.deltaTime;
     }
+
+    void MoveWithTUIOObject()
+    {
+        
+    }
 }
