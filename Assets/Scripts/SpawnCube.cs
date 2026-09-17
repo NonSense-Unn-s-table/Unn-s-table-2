@@ -57,7 +57,7 @@ public class SpawnCube : MonoBehaviour
 
             RaycastHit hitInfo;
             Ray ray = tableCamera.ScreenPointToRay(cube.screenPosition);
-            Physics.Raycast(ray, out hitInfo, 100f, LayerMask.GetMask("Floor"));
+            Physics.Raycast(ray, out hitInfo, 100f, LayerMask.GetMask("Floor", "Objects"));
             Vector3 cubePosition = hitInfo.point;
 
             Debug.Log("Cube position: " + cubePosition);
