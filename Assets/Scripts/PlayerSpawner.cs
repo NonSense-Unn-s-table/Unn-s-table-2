@@ -9,7 +9,7 @@ public class PlayerSpawner : NetworkBehaviour
     {
         if (IsHost && !IsLocalPlayer)
         {
-            Destroy(gameObject);
+            NetworkObject.Despawn();
         }
     }
 }
