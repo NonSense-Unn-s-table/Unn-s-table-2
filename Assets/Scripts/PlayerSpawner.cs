@@ -11,5 +11,10 @@ public class PlayerSpawner : NetworkBehaviour
         {
             NetworkObject.Despawn();
         }
+        else // for host/VR player
+        {
+            Camera playerCamera = GetComponentInChildren<Camera>();
+            playerCamera.enabled = true;
+        }
     }
 }
