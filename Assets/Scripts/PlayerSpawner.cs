@@ -5,7 +5,7 @@ using Unity.Netcode;
 
 public class PlayerSpawner : NetworkBehaviour
 {
-    void Start()
+    override public void OnNetworkSpawn()
     {
         if (IsHost && !IsLocalPlayer)
         {
