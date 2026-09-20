@@ -2,20 +2,17 @@ using UnityEngine;
 
 public class PlayerPixelsenseInput : MonoBehaviour
 {
-    [SerializeField]
     private TUIOSupport tuio;
-    [SerializeField]
     private MeshRenderer rend;
-    [SerializeField]
     private Rigidbody rb;
     [SerializeField]
     private Camera tableCamera;
 
-    void Start()
+    void Awake()
     {
-        if (!tuio) tuio = FindAnyObjectByType<TUIOSupport>();
-        if (!rend) rend = GetComponent<MeshRenderer>();
-        if (!rb) rb = GetComponent<Rigidbody>();
+        tuio = FindAnyObjectByType<TUIOSupport>();
+        rend = GetComponent<MeshRenderer>();
+        rb = GetComponent<Rigidbody>();
         if (!tableCamera) tableCamera = FindAnyObjectByType<Camera>();
     }
 
