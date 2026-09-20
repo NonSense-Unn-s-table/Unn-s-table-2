@@ -7,7 +7,7 @@ public class PlayerSpawner : NetworkBehaviour
 {
     void Start()
     {
-        if (!IsHost)
+        if (IsHost && !IsLocalPlayer)
         {
             Destroy(gameObject);
         }
