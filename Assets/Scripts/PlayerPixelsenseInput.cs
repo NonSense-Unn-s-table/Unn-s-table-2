@@ -1,18 +1,21 @@
-using Unity.Netcode;
 using UnityEngine;
 
 public class PlayerPixelsenseInput : MonoBehaviour
 {
+    [SerializeField]
     private TUIOSupport tuio;
+    [SerializeField]
     private MeshRenderer rend;
+    [SerializeField]
     private Rigidbody rb;
-    [SerializeField] private Camera tableCamera;
+    [SerializeField]
+    private Camera tableCamera;
 
-    void Awake()
+    void Start()
     {
-        tuio = FindAnyObjectByType<TUIOSupport>();
-        rend = GetComponent<MeshRenderer>();
-        rb = GetComponent<Rigidbody>();
+        if (!tuio) tuio = FindAnyObjectByType<TUIOSupport>();
+        if (!rend) rend = GetComponent<MeshRenderer>();
+        if (!rb) rb = GetComponent<Rigidbody>();
         if (!tableCamera) tableCamera = FindAnyObjectByType<Camera>();
     }
 
@@ -49,7 +52,7 @@ public class PlayerPixelsenseInput : MonoBehaviour
 
         if (cube != null)
         {
-            UnhideCubeRpc();
+            UnhideCube();
 
             RaycastHit hitInfo;
             Ray ray = tableCamera.ScreenPointToRay(cube.screenPosition);
@@ -57,28 +60,20 @@ public class PlayerPixelsenseInput : MonoBehaviour
             Vector3 cubePosition = hitInfo.point;
 
             Debug.Log("Player position: " + cubePosition);
-            if (Vector2.Distance(cubePosition, Vector2.zero) > 0.1f) MoveRpc(cubePosition + new Vector3(0f,1f,0f));
+            if (Vector2.Distance(cubePosition, Vector2.zero) > 0.1f) rb.MovePosition(cubePosition + new Vector3(0f,1f,0f));
         } 
         else
         {
-            // HideCubeRpc();
+            // HideCube();
         }
     }
 
-    [Rpc(SendTo.Owner)]
-    private void MoveRpc(Vector3 position)
-    {
-        rb.MovePosition(position);
-    }
-
-    [Rpc(SendTo.Owner)]
-    public void HideCubeRpc()
+    public void HideCube()
     {
         rend.enabled = false;
     }
 
-    [Rpc(SendTo.Owner)]
-    public void UnhideCubeRpc()
+    public void UnhideCube()
     {
         rend.enabled = true;
     }
