@@ -54,7 +54,7 @@ public class SpawnCube : NetworkBehaviour
 
             RaycastHit hitInfo;
             Ray ray = tableCamera.ScreenPointToRay(cube.screenPosition);
-            Physics.Raycast(ray, out hitInfo, 100f, LayerMask.GetMask("Floor", "Objects"));
+            Physics.Raycast(ray, out hitInfo, 100f, LayerMask.GetMask("Floor"));
             Vector3 cubePosition = hitInfo.point;
 
             Debug.Log("Cube position: " + cubePosition);
