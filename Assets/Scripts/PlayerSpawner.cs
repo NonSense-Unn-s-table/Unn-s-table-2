@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
 
@@ -11,7 +9,7 @@ public class PlayerSpawner : NetworkBehaviour
         {
             NetworkObject.Despawn();
         }
-        else // for host/VR player
+        else if (IsHost && IsLocalPlayer) // for host/VR player
         {
             Camera playerCamera = GetComponentInChildren<Camera>();
             playerCamera.enabled = true;
