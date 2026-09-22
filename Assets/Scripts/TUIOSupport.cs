@@ -144,6 +144,7 @@ public class TUIOSupport : MonoBehaviour
 
             Debug.Log("Added cursor with ID " + e.Cursor.Id + " at position " + cur.screenPosition);
         };
+        tuioServer.AddDataProcessor(cursorProcessor);
     }
 
     public static IEnumerable<ScreenObject> GetScreenObjects()
