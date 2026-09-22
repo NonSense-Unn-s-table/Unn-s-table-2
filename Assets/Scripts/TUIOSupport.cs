@@ -13,12 +13,19 @@ public class ScreenObject
 
 }
 
+public class CursorObject
+{
+    public int id;
+    public Vector2 screenPosition;
+}
+
 public class TUIOSupport : MonoBehaviour
 {
     private static TUIOSupport _instance;
     private readonly int _port = 3333;
     private TuioServer tuioServer;
     private Dictionary<int, ScreenObject> _screenObjects;
+    private Dictionary<int, CursorObject> _screenCursors;
 
     [SerializeField]
     private bool EmulateTuio = false;
@@ -115,6 +122,28 @@ public class TUIOSupport : MonoBehaviour
             Debug.Log("Removed object with ByteTag " + e.Object.ClassId);
         };
         tuioServer.AddDataProcessor(objectProcessor);
+
+
+        // Add Cursor Processor
+        var cursorProcessor = new CursorProcessor();
+        cursorProcessor.CursorAdded += (sender, e) =>
+        {
+            if (_screenCursors.ContainsKey(e.Cursor.Id))
+            {
+                Debug.LogError("A screen cursor input was received for a cursor that already exists.");
+                return;
+            }
+
+            var cur = new CursorObject()
+            {
+                id = e.Cursor.Id,
+                screenPosition = new Vector2(e.Cursor.X, 1 - e.Cursor.Y)
+            };
+
+            // _screenCursors.Add(e.Cursor.Id, cur);
+
+            Debug.Log("Added cursor with ID " + e.Cursor.Id + " at position " + cur.screenPosition);
+        };
     }
 
     public static IEnumerable<ScreenObject> GetScreenObjects()
