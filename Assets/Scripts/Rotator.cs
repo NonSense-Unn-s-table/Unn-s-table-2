@@ -16,6 +16,7 @@ public class Rotator : MonoBehaviour
     {
         if (!tuio) tuio = FindAnyObjectByType<TUIOSupport>();
         if (!tableCamera) tableCamera = FindAnyObjectByType<Camera>();
+        currentCubeID = 0;
     }
 
     void Update()
@@ -95,6 +96,15 @@ public class Rotator : MonoBehaviour
         {
             float angle = Vector2.SignedAngle(new Vector2(1, 0), locator3 - locator2);
             Debug.Log(angle);
+            // Set cubeID based on angle (-180 to 180 degrees)
+            if (angle > 0)
+            {
+                currentCubeID = 0;
+            }
+            else if (angle < 0)
+            {
+                currentCubeID = 1;
+            }
         }
     }
 }
