@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Forcefield : MonoBehaviour
 {
-    public PhysicsButton button;
+    // public PhysicsButton button;
     private MeshRenderer rend;
     private BoxCollider bcoll;
 
@@ -12,23 +12,17 @@ public class Forcefield : MonoBehaviour
     {
         if (!rend) rend = GetComponent<MeshRenderer>();
         if (!bcoll) bcoll = GetComponent<BoxCollider>();
-        button.onPressed.AddListener(RemoveForcefield);
-        button.onReleased.AddListener(DeployForcefield);
+        // button.onPressed.AddListener(RemoveForcefield);
+        // button.onReleased.AddListener(DeployForcefield);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void RemoveForcefield()
+    
+    public void RemoveForcefield()
     {
         rend.enabled = false;
         bcoll.enabled = false;
     }
 
-    void DeployForcefield()
+    public void DeployForcefield()
     {
         rend.enabled = true;
         bcoll.enabled = true;
