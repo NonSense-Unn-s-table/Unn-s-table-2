@@ -2829,7 +2829,7 @@ GameObject:
   - component: {fileID: 942816643}
   - component: {fileID: 942816642}
   - component: {fileID: 942816641}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Start Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3763,7 +3763,7 @@ GameObject:
   - component: {fileID: 1230972882}
   - component: {fileID: 1230972881}
   - component: {fileID: 1230972885}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3882,7 +3882,7 @@ MonoBehaviour:
   m_Colliders:
   - {fileID: 942816641}
   - {fileID: 232718896}
-  - {fileID: 0}
+  - {fileID: 1230972881}
   m_InteractionLayers:
     m_Bits: 2147483648
   m_DistanceCalculationMode: 2
@@ -5216,7 +5216,7 @@ GameObject:
   - component: {fileID: 1755866971}
   - component: {fileID: 1755866970}
   - component: {fileID: 1755866973}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Unlock Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
