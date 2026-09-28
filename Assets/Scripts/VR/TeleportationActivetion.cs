@@ -10,13 +10,21 @@ public class TeleportationActivetion : MonoBehaviour
     void Start()
     {
         teleportInteractors.gameObject.SetActive(false);
-       // teleportActivatorAction.action.performed += 
+        teleportActivatorAction.action.performed += Action_performed;
         
     }
 
+    private void Action_performed(InputAction.CallbackContext obj)
+    {
+        
+        teleportInteractors.gameObject.SetActive(true);
+    }
     // Update is called once per frame
     void Update()
     {
-        
+        if (teleportActivatorAction.action.WasReleasedThisFrame())
+        {
+            teleportInteractors.gameObject.SetActive(false);
+        }
     }
 }
