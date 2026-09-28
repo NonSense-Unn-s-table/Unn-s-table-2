@@ -76,13 +76,13 @@ public class MultiplayerCube : NetworkBehaviour
         rb.MovePosition(position);
     }
 
-    [Rpc(SendTo.Owner)]
+    [Rpc(SendTo.Everyone)]
     public void HideCubeRpc()
     {
         rend.enabled = false;
     }
 
-    [Rpc(SendTo.Owner)]
+    [Rpc(SendTo.Everyone)]
     public void UnhideCubeRpc()
     {
         rend.enabled = true;
