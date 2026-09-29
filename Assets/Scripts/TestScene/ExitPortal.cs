@@ -1,4 +1,5 @@
 using UnityEngine;
+using Unity.Netcode;
 using UnityEngine.SceneManagement;
 
 public class ExitPortal : MonoBehaviour
@@ -18,6 +19,6 @@ public class ExitPortal : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("test");
+        NetworkManager.Singleton.SceneManager.LoadScene("test mp ui", LoadSceneMode.Single);
     }
 }
