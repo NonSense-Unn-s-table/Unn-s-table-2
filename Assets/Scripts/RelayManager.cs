@@ -15,6 +15,7 @@ public class RelayManager : MonoBehaviour
 {
     [SerializeField] private string joinCode;
     [SerializeField] private TMP_Text joinCodeText;
+    [SerializeField] private TMP_InputField joinCodeInput;
     private UnityTransport unityTransport;
 
     // Start is called before the first frame update
@@ -54,4 +55,25 @@ public class RelayManager : MonoBehaviour
         //StartHost()
         NetworkManager.Singleton.StartHost();
     }
+
+    public async void JoinRelay()
+    {
+        // 1.take the join code that the user inputs and call oinAllocationAsync
+        string code = joinCodeInput.text;
+        JoinAllocation joinAllocation = await RelayService.Instance.JoinAllocationAsync(code);
+
+        // 2. Configure the UnityTransport with our allocation
+        unityTransport.SetClientRelayData(
+            joinAllocation.RelayServer.IpV4, 
+            (ushort)joinAllocation.RelayServer.Port,
+            joinAllocation.AllocationIdBytes, 
+            joinAllocation.Key, 
+            joinAllocation.ConnectionData, 
+            joinAllocation.HostConnectionData
+        );
+        
+        // 3. StartClient()
+        NetworkManager.Singleton.StartClient();
+    }
+
 }
