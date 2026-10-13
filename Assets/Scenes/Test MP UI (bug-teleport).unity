@@ -678,7 +678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51922f6ad2f512746bf3a1b9425eee55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layerChanger: {fileID: 0}
+  layerChanger: {fileID: 349935578}
 --- !u!1 &233649376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,6 +1363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLayerName: Teleport Area
+  OriginalLayerName: Wall
   applyToChildren: 1
 --- !u!1 &301166043
 GameObject:
@@ -2038,6 +2039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLayerName: Teleport Area
+  OriginalLayerName: Wall
   applyToChildren: 1
 --- !u!1001 &368804481
 PrefabInstance:
@@ -5002,7 +5004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51922f6ad2f512746bf3a1b9425eee55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layerChanger: {fileID: 0}
+  layerChanger: {fileID: 293529175}
 --- !u!1 &1621329592
 GameObject:
   m_ObjectHideFlags: 0
