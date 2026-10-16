@@ -16874,11 +16874,11 @@ GameObject:
   - component: {fileID: 1293480651}
   - component: {fileID: 1293480650}
   - component: {fileID: 1293480654}
-  - component: {fileID: 1293480649}
   - component: {fileID: 1293480656}
   - component: {fileID: 1293480655}
   - component: {fileID: 1293480658}
   - component: {fileID: 1293480657}
+  - component: {fileID: 1293480659}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -16886,22 +16886,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1293480649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293480648}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bda10e95f6751754d804528e80916d23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tuio: {fileID: 653050640}
-  rend: {fileID: 1293480651}
-  rb: {fileID: 1293480654}
-  tableCamera: {fileID: 283874152}
 --- !u!65 &1293480650
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17098,6 +17082,18 @@ MonoBehaviour:
   Interpolate: 1
   SlerpPosition: 0
   isServerAuthoritative: 0
+--- !u!114 &1293480659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293480648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7df87eeea333400da1da03528498a6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1311649189
 GameObject:
   m_ObjectHideFlags: 0
