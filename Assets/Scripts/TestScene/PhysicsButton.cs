@@ -18,7 +18,6 @@ public class PhysicsButton : MonoBehaviour
     public Collider[] CollidersToIgnore;
     public UnityEvent onPressed;
     public UnityEvent onReleased;
-    public LayerChanger lockedFloor;
     // Start is called before the first frame update
     void Start()
     {
@@ -81,7 +80,6 @@ public class PhysicsButton : MonoBehaviour
         // pressedSound.pitch = 1;
         // pressedSound.Play();
         onPressed.Invoke();
-        lockedFloor.ChangeLayer();
     }
 
     void Released(){

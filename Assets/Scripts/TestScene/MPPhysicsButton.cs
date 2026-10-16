@@ -19,7 +19,6 @@ public class MPPhysicsButton : NetworkBehaviour
     public Collider[] CollidersToIgnore;
     public UnityEvent onPressed;
     public UnityEvent onReleased;
-    public LayerChanger lockedFloor;
     // Start is called before the first frame update
     void Start()
     {
@@ -86,7 +85,6 @@ public class MPPhysicsButton : NetworkBehaviour
         // pressedSound.pitch = 1;
         // pressedSound.Play();
         onPressed.Invoke();
-        lockedFloor.ChangeLayer();
     }
 
     [Rpc(SendTo.Everyone)]
