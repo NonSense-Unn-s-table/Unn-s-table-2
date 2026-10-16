@@ -99,7 +99,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: -3846018093981099296, guid: 9ddbc36dfb11942cbaeb141f47c47165, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -190,8 +190,6 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
-  SyncOwnerTransformWhenParented: 1
-  AllowOwnerToParent: 0
 --- !u!114 &7809991092516052094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,8 +454,6 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
-  SyncOwnerTransformWhenParented: 1
-  AllowOwnerToParent: 0
 --- !u!114 &811221798861430744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,3 +482,4 @@ MonoBehaviour:
   onReleased:
     m_PersistentCalls:
       m_Calls: []
+  lockedFloor: {fileID: 0}

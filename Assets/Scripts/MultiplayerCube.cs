@@ -11,13 +11,17 @@ public class MultiplayerCube : NetworkBehaviour
     private Rigidbody rb;
     [SerializeField]
     private Camera tableCamera;
-
+    [SerializeField]
+    private BoxCollider bcoll;
+    [SerializeField]
+    private int id;
     void Awake()
     {
         if (!tuio) tuio = FindAnyObjectByType<TUIOSupport>();
         if (!rend) rend = GetComponent<MeshRenderer>();
         if (!rb) rb = GetComponent<Rigidbody>();
         if (!tableCamera) tableCamera = FindAnyObjectByType<Camera>();
+        if (!bcoll) bcoll = GetComponent<BoxCollider>();
     }
 
     void Update()
@@ -80,11 +84,13 @@ public class MultiplayerCube : NetworkBehaviour
     public void HideCubeRpc()
     {
         rend.enabled = false;
+        bcoll.enabled = false;
     }
 
     [Rpc(SendTo.Everyone)]
     public void UnhideCubeRpc()
     {
         rend.enabled = true;
+        bcoll.enabled = true;
     }
 }
