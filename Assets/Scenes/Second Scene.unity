@@ -534,7 +534,7 @@ MonoBehaviour:
   m_RenderShadows: 1
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 1
+  m_CameraType: 0
   m_Cameras: []
   m_RendererIndex: -1
   m_VolumeLayerMask:
@@ -4358,7 +4358,7 @@ GameObject:
   - component: {fileID: 1248356692}
   - component: {fileID: 1248356697}
   - component: {fileID: 1248356698}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20822,6 +20822,10 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -8061240218431744966, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  playerHead: {fileID: 0}
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &2048709209
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -74,10 +74,11 @@ public class MultiplayerCube : NetworkBehaviour
         }
     }
 
-    [Rpc(SendTo.Owner)]
+    [Rpc(SendTo.Everyone)]
     public void MoveCubeRpc(Vector3 position)
     {
         rb.MovePosition(position);
+        rb.velocity = Vector3.zero;
     }
 
     [Rpc(SendTo.Everyone)]
