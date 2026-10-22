@@ -95,7 +95,7 @@ public class Rotator : MonoBehaviour
         if (locator2 != null & locator3 != null)
         {
             float angle = Vector2.SignedAngle(new Vector2(1, 0), locator3 - locator2);
-            Debug.Log(angle);
+            //Debug.Log(angle);
             // Set cubeID based on angle (-180 to 180 degrees)
             if (angle > 0)
             {
