@@ -1,24 +1,42 @@
 using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MultiplayerCube : NetworkBehaviour
 {
-    [SerializeField]
     private MeshRenderer rend;
-    [SerializeField]
+    private BoxCollider bcoll;
     private Rigidbody rb;
+    private Light light;
     [SerializeField]
     private Camera tableCamera;
-    [SerializeField]
-    private BoxCollider bcoll;
+    
     [SerializeField]
     private int byteTag;
+    [SerializeField]
+    [Min(0)]
+    private float height = 1;
+
+    private enum MouseButton
+    {
+        LeftMouseButton = 0,
+        RightMouseButton = 1,
+        MiddleMouseButton = 2
+    }
+
+    [SerializeField]
+    private MouseButton emulatorMouseButton;
+
+    public UnityEvent hideCube;
+    public UnityEvent unhideCube;
+
     void Awake()
     {
         if (!rend) rend = GetComponent<MeshRenderer>();
         if (!rb) rb = GetComponent<Rigidbody>();
         if (!tableCamera) tableCamera = FindAnyObjectByType<Camera>();
         if (!bcoll) bcoll = GetComponent<BoxCollider>();
+        if (!light) light = GetComponent<Light>();
     }
 
     void Update()
@@ -28,7 +46,7 @@ public class MultiplayerCube : NetworkBehaviour
 
         if (TUIOSupport.emulateTuio)
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButton((int)emulatorMouseButton))
             {
                 Vector2 mousePosition = Input.mousePosition;
                 
@@ -70,7 +88,7 @@ public class MultiplayerCube : NetworkBehaviour
 
             // Debug.Log("Cube position: " + cubePosition);
             // if (Vector2.Distance(cubePosition, Vector2.zero) > 0.1f) 
-            MoveCubeRpc(cubePosition + new Vector3(0f,1f,0f));
+            MoveCubeRpc(cubePosition + new Vector3(0f, height, 0f));
         } 
         else
         {
@@ -88,14 +106,12 @@ public class MultiplayerCube : NetworkBehaviour
     [Rpc(SendTo.Everyone)]
     public void HideCubeRpc()
     {
-        rend.enabled = false;
-        bcoll.enabled = false;
+        hideCube.Invoke();
     }
 
     [Rpc(SendTo.Everyone)]
     public void UnhideCubeRpc()
     {
-        rend.enabled = true;
-        bcoll.enabled = true;
+        unhideCube.Invoke();
     }
 }
