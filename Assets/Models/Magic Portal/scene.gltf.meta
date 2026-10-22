@@ -1,0 +1,106 @@
+fileFormatVersion: 2
+guid: 981ec7292929f3041939048d4c0be27f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 715df9372183c47e389bb6e19fbc3b52, type: 3}
+  editorImportSettings:
+    generateSecondaryUVSet: 0
+  importSettings:
+    nodeNameMethod: 1
+    animationMethod: 2
+    generateMipMaps: 1
+    texturesReadable: 0
+    defaultMinFilterMode: 9729
+    defaultMagFilterMode: 9729
+    anisotropicFilterLevel: 1
+  instantiationSettings:
+    mask: -1
+    layer: 0
+    skinUpdateWhenOffscreen: 1
+    lightIntensityFactor: 1
+    sceneObjectCreation: 2
+  assetDependencies:
+  - type: 0
+    originalUri: Assets\Models\Magic Portal\scene.bin
+    assetPath: Assets\Models\Magic Portal\scene.bin
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\Arch_TextureaiStandardSurface1SG_baseColor.png
+    assetPath: Assets\Models\Magic Portal\textures\Arch_TextureaiStandardSurface1SG_baseColor.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\Arch_TextureaiStandardSurface1SG_metallicRoughness.png
+    assetPath: Assets\Models\Magic Portal\textures\Arch_TextureaiStandardSurface1SG_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\Arch_TextureaiStandardSurface1SG_emissive.png
+    assetPath: Assets\Models\Magic Portal\textures\Arch_TextureaiStandardSurface1SG_emissive.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\Arch_TextureaiStandardSurface1SG_normal.png
+    assetPath: Assets\Models\Magic Portal\textures\Arch_TextureaiStandardSurface1SG_normal.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\Chan_Texturelambert2SG_baseColor.png
+    assetPath: Assets\Models\Magic Portal\textures\Chan_Texturelambert2SG_baseColor.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\Chan_Texturelambert2SG_metallicRoughness.png
+    assetPath: Assets\Models\Magic Portal\textures\Chan_Texturelambert2SG_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\Chan_Texturelambert2SG_normal.png
+    assetPath: Assets\Models\Magic Portal\textures\Chan_Texturelambert2SG_normal.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\Colum_singlelambert2SG_baseColor.png
+    assetPath: Assets\Models\Magic Portal\textures\Colum_singlelambert2SG_baseColor.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\Colum_singlelambert2SG_metallicRoughness.png
+    assetPath: Assets\Models\Magic Portal\textures\Colum_singlelambert2SG_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\Colum_singlelambert2SG_normal.png
+    assetPath: Assets\Models\Magic Portal\textures\Colum_singlelambert2SG_normal.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\Fire_BricksaiStandardSurface1SG_baseColor.png
+    assetPath: Assets\Models\Magic Portal\textures\Fire_BricksaiStandardSurface1SG_baseColor.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\Fire_BricksaiStandardSurface1SG_metallicRoughness.png
+    assetPath: Assets\Models\Magic Portal\textures\Fire_BricksaiStandardSurface1SG_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\Fire_BricksaiStandardSurface1SG_normal.png
+    assetPath: Assets\Models\Magic Portal\textures\Fire_BricksaiStandardSurface1SG_normal.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\ShieldaiStandardSurface2SG_baseColor.png
+    assetPath: Assets\Models\Magic Portal\textures\ShieldaiStandardSurface2SG_baseColor.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\ShieldaiStandardSurface2SG_metallicRoughness.png
+    assetPath: Assets\Models\Magic Portal\textures\ShieldaiStandardSurface2SG_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\ShieldaiStandardSurface2SG_normal.png
+    assetPath: Assets\Models\Magic Portal\textures\ShieldaiStandardSurface2SG_normal.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\aiStandardSurface1SG_baseColor.png
+    assetPath: Assets\Models\Magic Portal\textures\aiStandardSurface1SG_baseColor.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\aiStandardSurface2SG_baseColor.png
+    assetPath: Assets\Models\Magic Portal\textures\aiStandardSurface2SG_baseColor.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\aiStandardSurface2SG_metallicRoughness.png
+    assetPath: Assets\Models\Magic Portal\textures\aiStandardSurface2SG_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\aiStandardSurface2SG_normal.png
+    assetPath: Assets\Models\Magic Portal\textures\aiStandardSurface2SG_normal.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\aiStandardSurface3SG_baseColor.png
+    assetPath: Assets\Models\Magic Portal\textures\aiStandardSurface3SG_baseColor.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\aiStandardSurface4SG_baseColor.png
+    assetPath: Assets\Models\Magic Portal\textures\aiStandardSurface4SG_baseColor.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\aiStandardSurface4SG_metallicRoughness.png
+    assetPath: Assets\Models\Magic Portal\textures\aiStandardSurface4SG_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\aiStandardSurface4SG_emissive.png
+    assetPath: Assets\Models\Magic Portal\textures\aiStandardSurface4SG_emissive.png
+  - type: 1
+    originalUri: Assets\Models\Magic Portal\textures\aiStandardSurface5SG_baseColor.jpeg
+    assetPath: Assets\Models\Magic Portal\textures\aiStandardSurface5SG_baseColor.jpeg
+  reportItems: []

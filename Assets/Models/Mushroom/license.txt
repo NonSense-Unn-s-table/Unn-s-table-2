@@ -1,0 +1,11 @@
+Model Information:
+* title:	magic glowing mushroom
+* source:	https://sketchfab.com/3d-models/magic-glowing-mushroom-c0d237a1e68244d89d138531da85ebd8
+* author:	sv1nks (https://sketchfab.com/sv1nks)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "magic glowing mushroom" (https://sketchfab.com/3d-models/magic-glowing-mushroom-c0d237a1e68244d89d138531da85ebd8) by sv1nks (https://sketchfab.com/sv1nks) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

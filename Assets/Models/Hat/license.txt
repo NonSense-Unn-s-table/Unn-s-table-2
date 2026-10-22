@@ -1,0 +1,11 @@
+Model Information:
+* title:	A Magical Hat Low Poly For Games
+* source:	https://sketchfab.com/3d-models/a-magical-hat-low-poly-for-games-312a3240a5bb43df89cb2d17267bc518
+* author:	enumdev1 (https://sketchfab.com/enumdev1)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "A Magical Hat Low Poly For Games" (https://sketchfab.com/3d-models/a-magical-hat-low-poly-for-games-312a3240a5bb43df89cb2d17267bc518) by enumdev1 (https://sketchfab.com/enumdev1) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
