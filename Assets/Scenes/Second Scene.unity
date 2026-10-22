@@ -2303,7 +2303,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   tableCamera: {fileID: 0}
   bcoll: {fileID: 0}
-  id: 0
+  typeid: 0
 --- !u!1 &653050639
 GameObject:
   m_ObjectHideFlags: 0
@@ -16394,7 +16394,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 1606669735}
-  m_VersionIndex: 8
+  m_VersionIndex: 39
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -16419,7 +16419,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 15e0cbc319f5f994e8200c5cfa13f91c, type: 2}
+  - {fileID: 2100000, guid: f6aae04a6ebb57145815cc658524ef04, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16432,7 +16432,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 2
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -16715,7 +16715,7 @@ MonoBehaviour:
   rb: {fileID: 1293480654}
   tableCamera: {fileID: 283874152}
   bcoll: {fileID: 1293480650}
-  id: 0
+  typeid: 0
 --- !u!114 &1293480656
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ public class MultiplayerCube : NetworkBehaviour
     [SerializeField]
     private BoxCollider bcoll;
     [SerializeField]
-    private int id;
+    private int typeid;
     void Awake()
     {
         if (!tuio) tuio = FindAnyObjectByType<TUIOSupport>();
