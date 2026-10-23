@@ -14,7 +14,7 @@ public class DoorController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             animator.SetTrigger("OpenDoor");
-            Debug.Log("Lmao dog");
+            
         }
     }
 }

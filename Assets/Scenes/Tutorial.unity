@@ -3421,12 +3421,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948e2b40d68c85141833e9b3ed5f545f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tuio: {fileID: 653050640}
-  rend: {fileID: 1293480651}
-  rb: {fileID: 1293480654}
   tableCamera: {fileID: 283874152}
-  bcoll: {fileID: 0}
-  typeid: 0
+  byteTag: 0
+  height: 1
+  emulatorMouseButton: 0
+  hideCube:
+    m_PersistentCalls:
+      m_Calls: []
+  unhideCube:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1293480656
 MonoBehaviour:
   m_ObjectHideFlags: 0
