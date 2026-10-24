@@ -108,3 +108,6 @@ InitTestScene*.unity*
 
 # Annoying MacOS Finder file
 .DS_Store
+
+# ProBuilder Settings
+/ProjectSettings/Packages/com.unity.probuilder/Settings.json
