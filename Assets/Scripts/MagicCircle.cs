@@ -8,28 +8,26 @@ public class MagicCircle : MonoBehaviour
     public UnityEvent Activated;
     public UnityEvent Deactivated;
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start(){
         
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update(){
         
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.Equals(MPCube))
-        {
+        if (other.Equals(MPCube)){
+            Debug.Log("MPCube är på!");
             Activated.Invoke();
         }
     }
-    void OnTriggerExit(Collider other)
-    {
+    void OnTriggerExit(Collider other){
         if (other.Equals(MPCube))
         {
+            Debug.Log("MPCube lämnade!");
             Deactivated.Invoke();
         }
     }

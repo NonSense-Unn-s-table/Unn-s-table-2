@@ -4,17 +4,19 @@ public class DoorController : MonoBehaviour
 {
     private Animator animator;
 
-    void Start()
-    {
+    void Start(){
         animator = GetComponent<Animator>();
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            animator.SetTrigger("OpenDoor");
-            
-        }
-    }
+public void Open()
+{
+    Debug.Log("Dörren öppnas!");
+    animator.SetTrigger("OpenDoor");
+}
+
+public void Close()
+{
+    Debug.Log("Dörren stängs!");
+    animator.SetTrigger("CloseDoor");
+}
 }
