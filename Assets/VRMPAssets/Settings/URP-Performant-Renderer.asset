@@ -21,13 +21,13 @@ MonoBehaviour:
   _transparentLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  _minDepth: 0
+  _minDepth: 1
   _maxDepth: 16
   _maxRenders: 16
   _maxShadowDepth: 0
   _portalResolution: 1
   _bufferResolution: 1
-  _editorMinDepth: 0
+  _editorMinDepth: 1
   _editorMaxDepth: 16
   _editorMaxRenders: 16
   _editorMaxShadowDepth: 0

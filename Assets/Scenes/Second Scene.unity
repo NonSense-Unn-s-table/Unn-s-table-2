@@ -4699,7 +4699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95b6f538130118349a428d1212dacaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EmulateTuio: 1
+  EmulateTuio: 0
   PositionFactorX: 80
   PositionFactorY: 45
 --- !u!4 &653050641
@@ -67346,6 +67346,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3482876736631025237, guid: b7333eac64015e34d92d9222b97eee74, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6000737634687337646, guid: b7333eac64015e34d92d9222b97eee74, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6208388391032958291, guid: b7333eac64015e34d92d9222b97eee74, type: 3}

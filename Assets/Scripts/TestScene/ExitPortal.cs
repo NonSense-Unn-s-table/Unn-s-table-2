@@ -14,11 +14,11 @@ public class ExitPortal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.R)) NetworkManager.Singleton.SceneManager.LoadScene("Second Scene", LoadSceneMode.Single);
     }
 
     void OnTriggerEnter(Collider other)
     {
-        NetworkManager.Singleton.SceneManager.LoadScene("test mp ui", LoadSceneMode.Single);
+        NetworkManager.Singleton.SceneManager.LoadScene("Second Scene", LoadSceneMode.Single);
     }
 }
