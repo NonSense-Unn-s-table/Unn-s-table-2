@@ -5,10 +5,32 @@ using Unity.Netcode;
 
 public class SceneChanger : NetworkBehaviour
 {
+    public string targetScene = "";
+
+    [SerializeField]
+    private bool changeSceneOnConnect = true;
+
+    private void Awake()
+    {
+        if (targetScene == "")
+        {
+            Debug.LogWarning("No target scene set in SceneChanger!");
+        }
+    }
+
     public override void OnNetworkSpawn()
     {
-        NetworkManager.Singleton.SceneManager.LoadScene("MP UI Bugfix and resize", UnityEngine.SceneManagement.LoadSceneMode.Single);
-        NetworkObject.Despawn();
+        if (changeSceneOnConnect)
+        {
+            ChangeScene();
+        }
+        
         base.OnNetworkSpawn();
+    }
+
+    public void ChangeScene()
+    {
+        NetworkManager.Singleton.SceneManager.LoadScene(targetScene, UnityEngine.SceneManagement.LoadSceneMode.Single);
+        NetworkObject.Despawn();
     }
 }
