@@ -10,13 +10,11 @@ public class DoorController : MonoBehaviour
 
 public void Open()
 {
-    Debug.Log("Dörren öppnas!");
     animator.SetTrigger("OpenDoor");
 }
 
 public void Close()
 {
-    Debug.Log("Dörren stängs!");
     animator.SetTrigger("CloseDoor");
 }
 }
