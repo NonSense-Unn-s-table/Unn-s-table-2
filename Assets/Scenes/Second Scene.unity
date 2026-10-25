@@ -3566,6 +3566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Better Door (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7454645526100589172, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7800208375020413134, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6
@@ -3617,6 +3621,10 @@ PrefabInstance:
     - target: {fileID: 7800208375020413134, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588655139355920331, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -4589,6 +4597,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Better Door (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7454645526100589172, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7800208375020413134, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6
@@ -4640,6 +4652,14 @@ PrefabInstance:
     - target: {fileID: 7800208375020413134, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588655139355920331, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097862049458624327, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59415,6 +59435,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Better Door (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7454645526100589172, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7800208375020413134, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6
@@ -59466,6 +59490,14 @@ PrefabInstance:
     - target: {fileID: 7800208375020413134, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588655139355920331, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097862049458624327, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59540,6 +59572,14 @@ PrefabInstance:
     - target: {fileID: 7800208375020413134, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588655139355920331, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097862049458624327, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -60940,6 +60980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Better Door
       objectReference: {fileID: 0}
+    - target: {fileID: 7454645526100589172, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7800208375020413134, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6
@@ -60991,6 +61035,14 @@ PrefabInstance:
     - target: {fileID: 7800208375020413134, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588655139355920331, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097862049458624327, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -62574,6 +62626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Better Door (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7454645526100589172, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7800208375020413134, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6
@@ -62625,6 +62681,14 @@ PrefabInstance:
     - target: {fileID: 7800208375020413134, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588655139355920331, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9097862049458624327, guid: 46fd7dc43b8ab80408a2738146a1160f, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
