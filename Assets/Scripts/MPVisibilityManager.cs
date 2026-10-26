@@ -15,7 +15,7 @@ public class MPVisibilityManager : NetworkBehaviour
         if (Input.GetKeyDown(KeyCode.R)) RestartRpc();
     }
 
-    [Rpc(SendTo.Owner)]
+    [Rpc(SendTo.Server)]
     void RestartRpc()
     {
         NetworkManager.Singleton.SceneManager.LoadScene("Second Scene", LoadSceneMode.Single);
