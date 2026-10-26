@@ -10255,9 +10255,9 @@ MonoBehaviour:
   hatObject: {fileID: 51970809}
   potionInteractor: {fileID: 478017837}
   potionObject: {fileID: 1810066086}
-  staffInteractor: {fileID: 461616060}
+  staffInteractor: {fileID: 369114486}
   staffObject: {fileID: 1601570563}
-  mushroomInteractor: {fileID: 369114486}
+  mushroomInteractor: {fileID: 461616060}
   mushroomObject: {fileID: 766952875}
   Activated:
     m_PersistentCalls:
