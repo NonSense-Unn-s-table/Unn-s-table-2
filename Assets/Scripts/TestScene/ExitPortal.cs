@@ -4,7 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class ExitPortal : MonoBehaviour
 {
-    public Scene sc;
+    [SerializeField]
+    private Collider Player;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,9 @@ public class ExitPortal : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        NetworkManager.Singleton.SceneManager.LoadScene("Second Scene", LoadSceneMode.Single);
+        if (other == Player)
+        {
+            NetworkManager.Singleton.SceneManager.LoadScene("Second Scene", LoadSceneMode.Single);
+        }
     }
 }
