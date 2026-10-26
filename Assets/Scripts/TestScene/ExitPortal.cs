@@ -12,18 +12,6 @@ public class ExitPortal : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R)) RestartRpc();
-    }
-
-    [Rpc(SendTo.Owner)]
-    void RestartRpc()
-    {
-        NetworkManager.Singleton.SceneManager.LoadScene("Second Scene", LoadSceneMode.Single);
-    }
-
     void OnTriggerEnter(Collider other)
     {
         if (other.Equals(Player))
