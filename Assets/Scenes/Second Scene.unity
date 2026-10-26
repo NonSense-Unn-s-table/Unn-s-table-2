@@ -70016,6 +70016,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6000737634687337646, guid: b7333eac64015e34d92d9222b97eee74, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 86dced21da78b2440893df63d4374ac6, type: 2}
     - target: {fileID: 6208388391032958291, guid: b7333eac64015e34d92d9222b97eee74, type: 3}
       propertyPath: tableCamera
       value: 
