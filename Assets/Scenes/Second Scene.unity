@@ -70016,6 +70016,10 @@ PrefabInstance:
       propertyPath: tableCamera
       value: 
       objectReference: {fileID: 283874152}
+    - target: {fileID: 7184572651418012948, guid: b7333eac64015e34d92d9222b97eee74, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2432090755550338912, guid: f53784c03abb0fb4d87998ff14eb70e3, type: 3}
     - target: {fileID: 7199620504866169258, guid: b7333eac64015e34d92d9222b97eee74, type: 3}
       propertyPath: GlobalObjectIdHash
       value: 1322474094
