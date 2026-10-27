@@ -7103,7 +7103,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 313111524628969300, guid: 95cd90e679c5e4c4f928dda43f2bcd9e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 853765634116707019, guid: 95cd90e679c5e4c4f928dda43f2bcd9e, type: 3}
       propertyPath: m_IsActive
@@ -59704,6 +59704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XRPortalPair
       objectReference: {fileID: 0}
+    - target: {fileID: 5959625589689371681, guid: 7408510d67847dd42a455df5f3d619ee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5959625589689371686, guid: 7408510d67847dd42a455df5f3d619ee, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.102
@@ -70334,8 +70338,8 @@ SceneRoots:
   - {fileID: 1074491144}
   - {fileID: 1511008715}
   - {fileID: 600304597}
-  - {fileID: 746482226}
   - {fileID: 1126556629}
   - {fileID: 3486104947422521151}
   - {fileID: 1108732151}
+  - {fileID: 746482226}
   - {fileID: 1280920150}
