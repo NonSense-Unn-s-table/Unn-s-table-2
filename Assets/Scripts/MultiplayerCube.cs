@@ -26,7 +26,7 @@ public class MultiplayerCube : NetworkBehaviour
     [SerializeField]
     private MouseButton emulatorMouseButton;
 
-    private Vector2 lastUsedCubePosition = Vector2.zero;
+    private Vector3 lastUsedCubePosition = Vector2.zero;
 
     public UnityEvent hideCube;
     public UnityEvent unhideCube;
@@ -90,8 +90,12 @@ public class MultiplayerCube : NetworkBehaviour
 
             // Debug.Log("Cube position: " + cubePosition);
             // if (Vector2.Distance(cubePosition, Vector2.zero) > 0.1f) 
-            if (Vector2.Distance(cubePosition, lastUsedCubePosition) > 0.1f)
+            if (Vector3.Distance(cubePosition, lastUsedCubePosition) > 0.1f)
+            {
+                Debug.Log("djwaud: " + Vector3.Distance(cubePosition, lastUsedCubePosition));
+                lastUsedCubePosition = cubePosition;
                 MoveCubeRpc(cubePosition + new Vector3(0f, height, 0f));
+            }
         } 
         else
         {
