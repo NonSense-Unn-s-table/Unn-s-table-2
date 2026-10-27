@@ -122,7 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tableCamera: {fileID: 0}
   byteTag: 1
-  height: 5
+  height: 0.8
   emulatorMouseButton: 1
   hideCube:
     m_PersistentCalls:
@@ -232,14 +232,13 @@ GameObject:
   - component: {fileID: 2551530619320282014}
   - component: {fileID: 2832145872812588963}
   - component: {fileID: 1748803953255085475}
-  - component: {fileID: 5078030020090535469}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2551530619320282014
 RectTransform:
   m_ObjectHideFlags: 0
@@ -256,7 +255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.501}
+  m_AnchoredPosition: {x: 0, y: -0.52}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!33 &2832145872812588963
@@ -309,28 +308,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5078030020090535469
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8184729990875989124}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &2054146910914952114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,7 +383,7 @@ PrefabInstance:
     - target: {fileID: 4966409665695033816, guid: 027dbf5b55e4c2344a750f3c72f4f2e9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f6aae04a6ebb57145815cc658524ef04, type: 2}
+      objectReference: {fileID: 2100000, guid: 668f93d513fa0114a81dbfa4af50c211, type: 2}
     - target: {fileID: 4966409665695033816, guid: 027dbf5b55e4c2344a750f3c72f4f2e9, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 

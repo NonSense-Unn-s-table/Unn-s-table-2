@@ -2,12 +2,11 @@ using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(Rigidbody))]
+
 public class MultiplayerCube : NetworkBehaviour
 {
-    private MeshRenderer rend;
-    private BoxCollider bcoll;
     private Rigidbody rb;
-    private Light light;
     [SerializeField]
     private Camera tableCamera;
     
@@ -27,16 +26,19 @@ public class MultiplayerCube : NetworkBehaviour
     [SerializeField]
     private MouseButton emulatorMouseButton;
 
+    private Vector2 lastUsedCubePosition = Vector2.zero;
+
     public UnityEvent hideCube;
     public UnityEvent unhideCube;
 
     void Awake()
     {
-        if (!rend) rend = GetComponent<MeshRenderer>();
         if (!rb) rb = GetComponent<Rigidbody>();
-        if (!tableCamera) tableCamera = FindAnyObjectByType<Camera>();
-        if (!bcoll) bcoll = GetComponent<BoxCollider>();
-        if (!light) light = GetComponent<Light>();
+        if (!tableCamera)
+        {
+            Debug.LogWarning("Overhead table camera not assigned. Using first camera found.");
+            tableCamera = FindAnyObjectByType<Camera>();
+        }
     }
 
     void Update()
@@ -88,7 +90,8 @@ public class MultiplayerCube : NetworkBehaviour
 
             // Debug.Log("Cube position: " + cubePosition);
             // if (Vector2.Distance(cubePosition, Vector2.zero) > 0.1f) 
-            MoveCubeRpc(cubePosition + new Vector3(0f, height, 0f));
+            if (Vector2.Distance(cubePosition, lastUsedCubePosition) > 0.1f)
+                MoveCubeRpc(cubePosition + new Vector3(0f, height, 0f));
         } 
         else
         {
