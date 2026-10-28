@@ -14,9 +14,8 @@ public class MPRune : NetworkBehaviour
     private Collider Player;
     private void OnTriggerEnter(Collider other)
     {
-        if (!IsOwner) return;
-
-        if (other.Equals(Player))
+        // if (!IsOwner) return;
+        if (other.tag.Equals("Player"))
         {
             PressRpc();            
         }
