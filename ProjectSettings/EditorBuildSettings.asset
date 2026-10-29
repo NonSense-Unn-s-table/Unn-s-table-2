@@ -32,7 +32,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Tutorial.unity
     guid: e942813a37ff8744e93d9cc86f91434a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VR Main Menu.unity
     guid: d46db6e96db0e4698a9f37b54ae83fd5
   - enabled: 1
